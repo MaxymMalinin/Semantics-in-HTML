@@ -9,6 +9,17 @@
       figure {
         margin: 0;
       }
+      .elementsList {
+        text-decoration: none;
+        color: black;
+      }
+      iframe {
+        display: block;
+      }
+      #resume {
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
     </style>
   </head>
   <body>
@@ -29,6 +40,7 @@
         <code>&#60;article&#62;</code> - чітко визначає його зміст.
       </p>
     </header>
+
     <main>
       <section>
         <h2>Підтримка браузерів</h2>
@@ -62,14 +74,30 @@
           веб-сторінки:
         </p>
         <ul>
-          <li><code>&#60;section&#62;</code></li>
-          <li><code>&#60;article&#62;</code></li>
-          <li><code>&#60;header&#62;</code></li>
-          <li><code>&#60;footer&#62;</code></li>
+          <li>
+            <a class="elementsList" href="#sectionElement"
+              ><code>&#60;section&#62;</code></a
+            >
+          </li>
+          <li>
+            <a class="elementsList" href="#articleElement"
+              ><code>&#60;article&#62;</code></a
+            >
+          </li>
+          <li>
+            <a class="elementsList" href="#headerElement"
+              ><code>&#60;header&#62;</code></a
+            >
+          </li>
+          <li>
+            <a class="elementsList" href="#footerElemet"
+              ><code>&#60;footer&#62;</code></a
+            >
+          </li>
         </ul>
       </section>
 
-      <section>
+      <section id="sectionElement">
         <h2>HTML5 <code>&#60;section&#62;</code> елемент</h2>
         <p>
           Елемент <code>&#60;section&#62;</code> визначає розділ в документі.
@@ -88,7 +116,7 @@
         />
       </section>
 
-      <section>
+      <section id="articleElement">
         <h2>HTML5 <code>&#60;article&#62;</code> елемент</h2>
         <p>
           Елемент <code>&#60;article&#62;</code> визначає незалежний, автономний
@@ -113,7 +141,7 @@
         />
       </section>
 
-      <section>
+      <section id="headerElement">
         <h2>HTML5 <code>&#60;header&#62;</code> елемент</h2>
         <p>
           Елемент <code>&#60;header&#62;</code> задає заголовок для документа
@@ -135,7 +163,7 @@
         />
       </section>
 
-      <section>
+      <section id="footerElemet">
         <h2>HTML5 <code>&#60;footer&#62;</code> елемент</h2>
         <p>
           Елемент <code>&#60;footer&#62;</code> вказує нижній колонтитул для
@@ -158,5 +186,25 @@
         /></a>
       </section>
     </main>
+
+    <footer>
+      <iframe
+        id="resume"
+        src="https://maxymmalinin.github.io/resume/index.html"
+        title="Resume"
+        width="1050"
+        height="900"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+
+      <iframe
+        src="https://www.youtube.com/embed/dEBVe8Ij7JU"
+        frameborder="0"
+        title="YouTube"
+        width="1050"
+        height="591"
+      ></iframe>
+    </footer>
   </body>
 </html>
